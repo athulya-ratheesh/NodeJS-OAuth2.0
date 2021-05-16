@@ -1,5 +1,5 @@
 require('dotenv').config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT;
 
 // Database imports
 const dbConfig = require("./server/config/dbConfig");
@@ -21,6 +21,8 @@ app.use(function (req, res, next) {
 app.oauth = oAuth2Server({
     model: oAuthService,
     grants: ["password"],
+    client_id: "client",
+    client_secret: "secret",
     debug: true,
 });
 
