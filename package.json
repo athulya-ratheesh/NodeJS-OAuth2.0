@@ -1,0 +1,24 @@
+{
+  "name": "identityserver",
+  "version": "1.0.0",
+  "description": "Identity Server using Node OAuth2.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Athulya Ratheesh",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.2.5",
+    "node-oauth2-server": "^2.4.0",
+    "oauth2-server": "^3.1.1",
+    "simple-oauth2": "^4.2.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
